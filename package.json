@@ -1,0 +1,45 @@
+{
+  "name": "es6-project-boilerplate",
+  "description": "the my thought strongest template for es6 project",
+  "version": "0.0.0",
+  "author": "mohayonao <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/es6-project-boilerplate/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^4.3.0",
+    "babelify": "^5.0.3",
+    "browserify": "^8.1.3",
+    "espower-babel": "^1.3.0",
+    "isparta": "^2.0.0",
+    "jshint": "^2.6.0",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.1.0",
+    "power-assert": "^0.10.2",
+    "uglify-js": "^2.4.16"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "lib"
+  ],
+  "homepage": "https://github.com/mohayonao/es6-project-boilerplate/",
+  "keywords": [],
+  "licenses": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/es6-project-boilerplate.git"
+  },
+  "scripts": {
+    "build": "npm run build-to5 && npm run build-browser && npm run build-minify",
+    "build-browser": "browserify lib --outfile build/es6-project-boilderplate.js",
+    "build-minify": "uglifyjs build/es6-project-boilderplate.js -o build/es6-project-boilderplate.min.js --source-map build/es6-project-boilderplate.min.map",
+    "build-to5": "babel src --out-dir lib",
+    "cover": "babel-node node_modules/.bin/isparta cover --report text --report html node_modules/.bin/_mocha",
+    "lint": "jshint src test --reporter node_modules/jshint-stylish/stylish.js",
+    "test": "mocha",
+    "travis": "npm run lint && npm run test"
+  }
+}

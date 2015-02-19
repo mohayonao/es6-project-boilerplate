@@ -1,0 +1,22 @@
+{
+  "name": "es6-project-boilerplate",
+  "description": "the my thought strongest template for es6 project",
+  "version": "0.0.0",
+  "authors": [
+    "mohayonao <mohayonao@gmail.com>"
+  ],
+  "homepage": "https://github.com/mohayonao/es6-project-boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "main": "build/es6-project-boilerplate.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohayonao/es6-project-boilerplate.git"
+  }
+}
