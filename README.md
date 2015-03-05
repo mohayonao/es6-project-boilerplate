@@ -6,7 +6,10 @@
 [![devDependency Status](http://img.shields.io/david/dev/mohayonao/es6-project-boilerplate.svg?style=flat-square)](https://david-dm.org/mohayonao/es6-project-boilerplate#info=devDependencies)
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://mohayonao.mit-license.org/)
 
-> ぼくのかんがえたさいきょうのES6プロジェクトテンプレート
+
+## description
+
+- [ぼくのかんがえたさいきょうのES6プロジェクトテンプレート - Qiita](http://qiita.com/mohayonao/items/9b0655b8b4979bffda31)
 
 ## build
 - `npm run build`
